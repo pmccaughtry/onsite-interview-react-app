@@ -1,0 +1,46 @@
+.header {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: normal;
+}
+
+.header li {
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.header:last-child {
+    margin-right: 0;
+}
+
+.header ul {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+.header a,
+.header a:active,
+.header a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+.header a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ .active {
+    font-weight: bold;
+}
+
+@media(max-width: 499px) {
+    .header {
+        align-items: center;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ccc;
+    }
+}
